@@ -1,16 +1,4 @@
 ### create cloud run 
-terraform {
-    required_providers {
-        google = {
-            source = "hashicorp/google"
-        }
-    }
-}
-
-provider "google" {
-    project = var.project-id
-    region = var.location
-}
 
 module "cloudrun" {
     source  = "GoogleCloudPlatform/cloud-run/google"
