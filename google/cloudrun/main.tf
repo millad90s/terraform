@@ -5,7 +5,7 @@ module "cloudrun" {
     project_id = var.project-id
     location = var.location
 
-    image = "gcr.io/cloudrun/hello"
+    image = var.image
     service_name = var.service-name
 
     members = [

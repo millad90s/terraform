@@ -15,3 +15,9 @@ variable service-name {
   default     = "my-service2"
   description = "service name"
 }
+
+variable image {
+  type        = string
+  default     = "gcr.io/cloudrun/hello"
+  description = "image"
+}
